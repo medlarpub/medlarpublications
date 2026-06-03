@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Medlar Publishing — Crafting Publications. Delivering Excellence.</title>
+<meta name="description" content="Medlar Publishing is a specialist publishing production partner: typesetting and publication design, accessible PDF production (WCAG &amp; Section 508), and XML, ePub &amp; multi-format delivery for non-profits, think tanks, and research organizations worldwide. 15+ years; production at roughly 40% below US rates." />
+<link rel="canonical" href="https://www.medlarpub.com/" />
+<link rel="icon" href="assets/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<meta property="og:image" content="https://www.medlarpub.com/assets/og-image.png" />
+<meta name="twitter:image" content="https://www.medlarpub.com/assets/og-image.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.medlarpub.com/" />
+<meta property="og:title" content="Medlar Publishing — Crafting Publications. Delivering Excellence." />
+<meta property="og:description" content="A specialist publishing production partner. Typesetting, accessible PDF production (WCAG / Section 508), and multi-format delivery for mission-driven organizations." />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #F4F1E9;
+    --paper-2: #EBE7DB;
+    --ink: #1B2230;
+    --ink-soft: #454B59;
+    --muted: #6A7080;
+    --accent: #1E3F6E;
+    --accent-deep: #15314F;
+    --gold: #AE8838;
+    --line: #D8D2C3;
+    --band-bg: #16243F;
+    --band-text: #F4F1E9;
+    --band-soft: #B7BFCE;
+    --max: 1180px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Hanken Grotesk", sans-serif;
+    background: var(--paper); color: var(--ink); line-height: 1.6;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+  h1, h2, h3 { font-family: "Fraunces", serif; font-weight: 400; line-height: 1.04; letter-spacing: -0.01em; }
+  .kicker { font-size: 0.74rem; letter-spacing: 0.28em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
+
+  header { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); background: rgba(244,241,233,0.82); border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 74px; }
+  .brand { display: flex; align-items: center; gap: 11px; text-decoration: none; color: var(--ink); }
+  .brand .mark-img { height: 34px; width: auto; display: block; }
+  .brand .wm { display: flex; flex-direction: column; line-height: 1; }
+  .brand .wm .mark { font-family: "Fraunces", serif; font-size: 1.4rem; font-weight: 600; letter-spacing: 0.01em; }
+  .brand .wm .sub { font-size: 0.6rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-top: 3px; }
+  .navlinks { display: flex; gap: 32px; align-items: center; }
+  .navlinks a { text-decoration: none; color: var(--ink-soft); font-size: 0.86rem; font-weight: 500; letter-spacing: 0.02em; transition: color 0.25s; }
+  .navlinks a:hover { color: var(--accent); }
+  .navlinks .cta-link { border: 1px solid var(--ink); border-radius: 2px; padding: 9px 18px; color: var(--ink); transition: all 0.3s var(--ease); }
+  .navlinks .cta-link:hover { background: var(--ink); color: var(--paper); }
+  @media (max-width: 760px){ .navlinks a:not(.cta-link){ display:none; } }
+
+  .hero { padding: 104px 0 84px; position: relative; }
+  .hero .eyebrow { margin-bottom: 28px; }
+  .hero h1 { font-size: clamp(2.8rem, 6.6vw, 5.4rem); max-width: 15ch; letter-spacing: -0.02em; }
+  .hero h1 em { font-style: italic; color: var(--accent); }
+  .hero .lede { margin-top: 30px; max-width: 56ch; font-size: 1.18rem; color: var(--ink-soft); }
+  .hero .actions { margin-top: 42px; display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+  .btn { display: inline-block; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 15px 30px; border-radius: 2px; transition: all 0.3s var(--ease); }
+  .btn-primary { background: var(--accent); color: #FBF8F0; }
+  .btn-primary:hover { background: var(--accent-deep); transform: translateY(-2px); }
+  .btn-ghost { color: var(--ink); border-bottom: 1px solid var(--ink); padding: 6px 2px; border-radius: 0; }
+  .btn-ghost:hover { color: var(--accent); border-color: var(--accent); }
+  .hero-rule { margin-top: 80px; height: 1px; background: var(--line); }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 48px; padding-top: 26px; }
+  .hero-meta .n { font-family: "Fraunces", serif; font-size: 1.85rem; color: var(--accent); }
+  .hero-meta .l { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; margin-top: 2px; }
+
+  section { padding: 90px 0; }
+  .sec-head { max-width: 62ch; margin-bottom: 54px; }
+  .sec-head h2 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 16px; }
+  .sec-head p { margin-top: 18px; color: var(--ink-soft); font-size: 1.05rem; }
+
+  .overview { background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .overview .lead { font-family: "Fraunces", serif; font-size: clamp(1.5rem, 2.8vw, 2.1rem); line-height: 1.32; max-width: 24ch; color: var(--ink); }
+  .overview .body { color: var(--ink-soft); font-size: 1.08rem; max-width: 46ch; }
+  .ov-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+  @media (max-width: 820px){ .ov-grid { grid-template-columns: 1fr; gap: 28px; } .overview .lead{ max-width: none; } }
+
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  @media (max-width: 860px){ .grid3 { grid-template-columns: 1fr; } }
+  .card { background: var(--paper); padding: 40px 34px; transition: background 0.35s; }
+  .card:hover { background: #FBF8F0; }
+  .card .num { font-family: "Fraunces", serif; font-size: 0.9rem; color: var(--gold); letter-spacing: 0.1em; }
+  .card h3 { font-size: 1.4rem; margin: 14px 0 12px; }
+  .card p { color: var(--ink-soft); font-size: 0.97rem; }
+
+  .serve { background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .serve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--line); background: var(--line); }
+  @media (max-width: 700px){ .serve-grid { grid-template-columns: 1fr; } }
+  .serve-item { background: var(--paper); padding: 26px 30px; display: flex; gap: 18px; align-items: baseline; }
+  .serve-item .mk { font-family: "Fraunces", serif; color: var(--accent); font-size: 1.05rem; }
+  .serve-item h4 { font-family: "Hanken Grotesk"; font-weight: 700; font-size: 1.02rem; color: var(--ink); }
+  .serve-item p { font-size: 0.9rem; color: var(--muted); margin-top: 3px; }
+
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 46px 64px; }
+  @media (max-width: 760px){ .why-grid { grid-template-columns: 1fr; gap: 38px; } }
+  .why-item { border-top: 2px solid var(--accent); padding-top: 22px; }
+  .why-item h3 { font-size: 1.5rem; margin-bottom: 12px; }
+  .why-item p { color: var(--ink-soft); }
+
+  .clients { text-align: center; background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .clients .kicker { display: block; margin-bottom: 12px; }
+  .clients .sub { color: var(--muted); font-size: 0.96rem; margin: 0 auto 38px; max-width: 52ch; }
+  .logo-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
+  .logo-cell { flex: 0 1 218px; background: #FFFFFF; border: 1px solid var(--line); border-radius: 3px; padding: 26px 22px 16px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 14px; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease); }
+  .logo-cell:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 12px 26px rgba(27,34,48,0.09); }
+  .logo-cell img { height: 44px; max-width: 100%; width: auto; object-fit: contain; display: block; }
+  .logo-cell figcaption { font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-soft); font-weight: 600; line-height: 1.35; }
+  .logo-cell figcaption span { display: block; color: var(--muted); font-weight: 500; font-size: 0.64rem; letter-spacing: 0.06em; margin-top: 3px; }
+  @media (max-width: 620px){ .logo-cell { flex-basis: calc(50% - 18px); } } }
+
+  .cta-band { background-color: #EBE7DB; border-top: 1px solid #D8D2C3; border-bottom: 1px solid #D8D2C3; color: #1B2230; text-align: center; }
+  .cta-band h2 { font-size: clamp(2.1rem, 4.5vw, 3.3rem); color: #15314F; max-width: 20ch; margin: 0 auto 22px; }
+  .cta-band h2 em { font-style: italic; color: #1E3F6E; }
+  .cta-band p { color: #454B59; max-width: 58ch; margin: 0 auto 38px; font-size: 1.08rem; }
+  .cta-band .btn-primary { background: #1E3F6E; color: #FBF8F0; }
+  .cta-band .btn-primary:hover { background: #15314F; }
+
+  footer { padding: 60px 0 52px; border-top: 1px solid var(--line); }
+  .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 34px; align-items: flex-start; }
+  .foot-full { height: 78px; width: auto; display: block; }
+  .foot-tag { font-family: "Fraunces", serif; font-style: italic; font-size: 1.12rem; color: var(--accent); margin-top: 14px; }
+  .foot-info { font-size: 0.9rem; color: var(--muted); line-height: 1.95; text-align: right; }
+  .foot-info a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .foot-info a:hover { color: var(--accent); }
+  @media (max-width: 600px){ .foot-info { text-align: left; } }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
+  .reveal.in { opacity: 1; transform: none; }
+  .stagger > * { opacity: 0; transform: translateY(20px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+  .stagger.in > * { opacity: 1; transform: none; }
+  .stagger.in > *:nth-child(1){ transition-delay: .05s; } .stagger.in > *:nth-child(2){ transition-delay: .12s; }
+  .stagger.in > *:nth-child(3){ transition-delay: .19s; } .stagger.in > *:nth-child(4){ transition-delay: .26s; }
+  .stagger.in > *:nth-child(5){ transition-delay: .33s; } .stagger.in > *:nth-child(6){ transition-delay: .40s; }
+  .load { opacity: 0; transform: translateY(26px); animation: rise 1s var(--ease) forwards; }
+  .load.d1 { animation-delay: .1s; } .load.d2 { animation-delay: .25s; } .load.d3 { animation-delay: .4s; } .load.d4 { animation-delay: .55s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce){ .reveal, .stagger > * { opacity: 1 !important; transform: none !important; transition: none !important; } .load { animation: none !important; opacity: 1 !important; transform: none !important; } }
+</style>
+<noscript><style>.reveal,.stagger>*{opacity:1!important;transform:none!important;}.load{opacity:1!important;transform:none!important;animation:none!important;}</style></noscript>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img class="mark-img" src="assets/logo-mark.png" alt="Medlar Publishing mark" />
+      <span class="wm"><span class="mark">Medlar</span><span class="sub">Publishing</span></span>
+    </a>
+    <nav class="navlinks">
+      <a href="#deliver">What we deliver</a>
+      <a href="#serve">Who we serve</a>
+      <a href="#why">Why Medlar</a>
+      <a href="#clients">Clients</a>
+      <a class="cta-link" href="#contact">Request a sample</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker eyebrow load">Publishing Production Partner &middot; 15+ Years</p>
+    <h1 class="load d1">Crafting publications.<br /><em>Delivering excellence.</em></h1>
+    <p class="lede load d2">We help mission-driven organizations turn complex research into publications that get read &mdash; composed, accessible, and ready for every format.</p>
+    <div class="actions load d3">
+      <a class="btn btn-primary" href="#contact">Request a free 25-page sample</a>
+      <a class="btn btn-ghost" href="#deliver">See what we deliver</a>
+    </div>
+    <div class="hero-rule load d4">
+      <div class="hero-meta">
+        <div><div class="n">15+</div><div class="l">Years of production craft</div></div>
+        <div><div class="n">WCAG &amp; 508</div><div class="l">Accessibility compliant</div></div>
+        <div><div class="n">~40%</div><div class="l">Below typical US rates</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="overview" id="overview">
+  <div class="wrap ov-grid reveal">
+    <div class="lead">The quiet production engine behind publications that publish at scale.</div>
+    <div class="body">
+      <p>For more than fifteen years, Medlar Publishing has been the production partner behind the reports, journals, briefs, and books of organizations that publish at scale. Based in Thanjavur, in southern India, we handle the meticulous craft of production so client teams stay focused on the ideas.</p>
+      <p style="margin-top:16px;">Our work is invisible by design: done well, readers notice only a clean, professional publication.</p>
+    </div>
+  </div>
+</section>
+
+<section id="deliver">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">What we deliver</span>
+      <h2>A complete production line for serious publications.</h2>
+      <p>From manuscript to accessible, archive-ready files &mdash; handled by a dedicated team that treats every page as a finished piece of design.</p>
+    </div>
+    <div class="grid3 stagger">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Typesetting &amp; publication design</h3>
+        <p>Annual reports, white papers, and briefs designed to communicate authority at a glance &mdash; not just look good.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Accessible PDF production</h3>
+        <p>Specialist WCAG and Section 508-compliant production for policy publications &mdash; typeset, accessible, and delivered at scale.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>XML, ePub &amp; multi-format delivery</h3>
+        <p>From XML and eBook to press-ready PDF, we manage the full production pipeline so your team focuses on impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="serve" id="serve">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Who we serve</span>
+      <h2>Built for organizations that publish to be trusted.</h2>
+    </div>
+    <div class="serve-grid stagger">
+      <div class="serve-item"><span class="mk">&#9670;</span><div><h4>Non-profit organizations</h4><p>Annual reports &amp; donor communications</p></div></div>
+      <div class="serve-item"><span class="mk">&#9670;</span><div><h4>Think tanks</h4><p>Policy briefs, research papers &amp; white papers</p></div></div>
+      <div class="serve-item"><span class="mk">&#9670;</span><div><h4>Research organizations</h4><p>Journals &amp; monograph output</p></div></div>
+      <div class="serve-item"><span class="mk">&#9670;</span><div><h4>Advocacy groups</h4><p>Publication-grade communications</p></div></div>
+      <div class="serve-item"><span class="mk">&#9670;</span><div><h4>Higher education institutions</h4><p>Academic publishing requirements</p></div></div>
+      <div class="serve-item"><span class="mk">&#9670;</span><div><h4>Federal contractors &amp; policy research bodies</h4><p>Section 508-compliant reports</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Why Medlar</span>
+      <h2>Production partners who think like a publisher.</h2>
+    </div>
+    <div class="why-grid stagger">
+      <div class="why-item"><h3>Cost</h3><p>Production at roughly forty percent below typical US market rates, without compromise on craft.</p></div>
+      <div class="why-item"><h3>Time zone</h3><p>Our working day spans the US overnight, so work sent at close of business is often returned by the next morning.</p></div>
+      <div class="why-item"><h3>Technology</h3><p>Structured, tech-enabled workflows that hold formats consistent across every edition and channel.</p></div>
+      <div class="why-item"><h3>Capacity</h3><p>A scalable specialist bench that absorbs volume spikes without new headcount &mdash; turnaround in hours, not days.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="clients" id="clients">
+  <div class="wrap">
+    <span class="kicker reveal">Trusted by</span>
+    <p class="sub reveal">A specialist production partner trusted by research, policy, finance, and cultural institutions worldwide.</p>
+    <div class="logo-row stagger">
+      <figure class="logo-cell"><img src="assets/clients/cfa.png" alt="CFA Institute" loading="lazy" /><figcaption>CFA Institute<span>Charlottesville, VA</span></figcaption></figure>
+      <figure class="logo-cell"><img src="assets/clients/cgd.png" alt="Center for Global Development" loading="lazy" /><figcaption>Center for Global Development<span>Washington, DC</span></figcaption></figure>
+      <figure class="logo-cell"><img src="assets/clients/spglobal.png" alt="With Intelligence / S&amp;P Global" loading="lazy" /><figcaption>With Intelligence / S&amp;P Global<span>New York, NY</span></figcaption></figure>
+      <figure class="logo-cell"><img src="assets/clients/moma.png" alt="The Museum of Modern Art" loading="lazy" /><figcaption>The Museum of Modern Art<span>New York, NY</span></figcaption></figure>
+      <figure class="logo-cell"><img src="assets/clients/mindfulmoney.png" alt="Mindful Money" loading="lazy" /><figcaption>Mindful Money<span>Auckland, NZ</span></figcaption></figure>
+      <figure class="logo-cell"><img src="assets/clients/igcc.png" alt="IGCC" loading="lazy" /><figcaption>IGCC<span>Sydney, AU</span></figcaption></figure>
+      <figure class="logo-cell"><img src="assets/clients/acgih.png" alt="ACGIH" loading="lazy" /><figcaption>ACGIH<span>Cincinnati, OH</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" id="contact">
+  <div class="wrap">
+    <h2>See the quality on <em>your own</em> publication.</h2>
+    <p>Send us a sample, and we will produce a free 25-page demonstration &mdash; typeset, tagged, and accessible &mdash; at no cost and no obligation. Prefer to talk first? We are happy to meet over Zoom, or in person during our US visit this July through September.</p>
+    <a class="btn btn-primary" href="mailto:sundar@medlarpub.com?subject=Free%2025-page%20sample%20request">Request your free sample</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#top"><img class="foot-full" src="assets/logo-wordmark.png" alt="Medlar Publishing" /></a>
+      <div class="foot-tag">Crafting Publications. Delivering Excellence.</div>
+    </div>
+    <div class="foot-info">
+      Thanjavur, India &middot; Serving institutions across the US, UK, ANZ &amp; Europe<br />
+      <a href="mailto:sundar@medlarpub.com">sundar@medlarpub.com</a><br />
+      Text / WhatsApp: <a href="tel:+12023908890">(202) 390-8890</a><br />
+      <a href="https://www.medlarpub.com" target="_blank" rel="noopener">www.medlarpub.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var els = Array.prototype.slice.call(document.querySelectorAll('.reveal, .stagger'));
+    function showAll(){ els.forEach(function (el){ el.classList.add('in'); }); }
+    if (!('IntersectionObserver' in window)) { showAll(); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
+    // Fail-safe: anything still hidden becomes visible shortly after load
+    window.addEventListener('load', function () { setTimeout(showAll, 1200); });
+  })();
+</script>
+
+</body>
+</html>
