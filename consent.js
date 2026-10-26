@@ -1,7 +1,7 @@
 /* Cookie consent + Google Analytics loader.
    GA4 is only loaded after the visitor accepts; nothing is sent before that. */
 (function () {
-    var GA_ID = 'G-ZWM8XC4WEE';
+    var GA_ID = 'G-WDL38ZVQSB';
     var KEY = 'medlar_analytics_consent';
 
     window.dataLayer = window.dataLayer || [];
